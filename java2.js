@@ -10,10 +10,27 @@ let menu =[ {name :"food1", price: 1, category: "cate1", available: false},
 function showMenu(){
 for(let i=0; i< menu.length ; i++)
 {
-    console.log(menu[i].name);
+    console.log(menu[i].name + menu[i].price);
 }        
 }
 
 showMenu();
 
-let foodOrder =prompt(" Enter your order ");
+
+let selectedFood = null;
+
+while( selectedFood === null )
+{
+   let userOrder =prompt(" Enter your order ");
+   
+     if (userOrder === null) {
+              break;
+       }
+    else if(menu[i].name.toLowerCase() === foodOrder.trim().toLowerCase()) {
+                selectedFood = menu[i];
+                break;
+        
+            }
+  
+
+}

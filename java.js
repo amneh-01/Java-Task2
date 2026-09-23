@@ -1,15 +1,12 @@
 
 //1
+let num = [1,2,3,4,5];
 
-function reverseNumber(number) {
-   number = number.toString();
-    let reversed = "";
- for (let i = number.length - 1; i >= 0; i--) {
-    reversed += number[i];
-  }
-  return reversed;
+
+for(let i=num.length-1 ; i>= 0; i--){
+    document.write(num[i])
 }
-console.log(reverseNumber("12345"));
+
 
 //////////////////////////////////////////////////
 
@@ -22,13 +19,13 @@ for(let i=0 ; i <= 15 ;i++)
        }
        else{ console.log( i+ "is odd");}
 
-    }
+    }  
 
 ////////////////////////////////////////////////
 
 //3
 
-function insertDashes(number) {
+function dashes(number) {
 
     let result = "";
 
@@ -45,7 +42,7 @@ function insertDashes(number) {
 }
 
 let number = prompt("Enter a number:");
-insertDashes(number);
+dashes(number);
 
 
 //////////////////////////////////////////////
@@ -69,3 +66,4 @@ function Agechecker(age){
 }
 
 Agechecker(age);
+ 
