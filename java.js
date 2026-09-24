@@ -14,7 +14,7 @@ for(let i=num.length-1 ; i>= 0; i--){
 
 for(let i=0 ; i <= 15 ;i++)
     {
-       if ( i % 2 === 0 ){
+       if ( i % 2 == 0 ){
          console.log( i+ "is even");
        }
        else{ console.log( i+ "is odd");}
@@ -27,7 +27,7 @@ for(let i=0 ; i <= 15 ;i++)
 
 function dashes(number) {
 
-    let result = "";
+    let result = ""; 
 
     for (let i = 0; i < number.length; i++) {
 
@@ -37,7 +37,6 @@ function dashes(number) {
             result = result + "-";
         }
     }
-
     console.log(result);
 }
 
